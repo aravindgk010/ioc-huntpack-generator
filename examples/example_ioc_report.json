@@ -1,0 +1,23 @@
+{
+    "ipv4": [
+        "185.199.110.153"
+    ],
+    "domains": [
+        "evil-login-support.com"
+    ],
+    "urls": [
+        "http://evil-login-support.com/update"
+    ],
+    "emails": [
+        "attacker@evil-login-support.com"
+    ],
+    "md5": [
+        "44d88612fea8a8f36de82e1278abb02f"
+    ],
+    "sha1": [
+        "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    ],
+    "sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+}
