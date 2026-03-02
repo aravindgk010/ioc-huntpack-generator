@@ -14,11 +14,6 @@ These queries are starting points and should be adjusted to match the field name
 index=* ("185.199.110.153")
 ```
 
-### Domain: `evil-login-support.com`
-```spl
-index=* ("evil-login-support.com")
-```
-
 ### URL: `http://evil-login-support.com/update`
 ```spl
 index=* ("http://evil-login-support.com/update")
@@ -49,11 +44,6 @@ index=* ("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
 ### IP: `185.199.110.153`
 ```kql
 source.ip: "185.199.110.153" or destination.ip: "185.199.110.153"
-```
-
-### Domain: `evil-login-support.com`
-```kql
-url.domain: "evil-login-support.com" or dns.question.name: "evil-login-support.com" or host.name: "evil-login-support.com"
 ```
 
 ### URL: `http://evil-login-support.com/update`

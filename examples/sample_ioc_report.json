@@ -2,9 +2,7 @@
     "ipv4": [
         "185.199.110.153"
     ],
-    "domains": [
-        "evil-login-support.com"
-    ],
+    "domains": [],
     "urls": [
         "http://evil-login-support.com/update"
     ],

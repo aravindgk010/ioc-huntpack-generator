@@ -2,12 +2,12 @@
 
 **Source File:** `sample_alert.txt`
 
-**Total IOCs Found:** 7
+**Total IOCs Found:** 6
 
 ## Summary
 
 - **IPV4**: 1
-- **DOMAINS**: 1
+- **DOMAINS**: 0
 - **URLS**: 1
 - **EMAILS**: 1
 - **MD5**: 1
@@ -20,7 +20,7 @@
 - `185.199.110.153`
 
 ### DOMAINS
-- `evil-login-support.com`
+- None found
 
 ### URLS
 - `http://evil-login-support.com/update`
