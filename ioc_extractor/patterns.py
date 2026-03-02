@@ -1,0 +1,7 @@
+IPV4_PATTERN = r"\b(?:\d{1,3}\.){3}\d{1,3}\b"
+DOMAIN_PATTERN = r"\b(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\b"
+URL_PATTERN = r"\bhttps?://[^\s<>\"]+"
+EMAIL_PATTERN = r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b"
+MD5_PATTERN = r"\b[a-fA-F0-9]{32}\b"
+SHA1_PATTERN = r"\b[a-fA-F0-9]{40}\b"
+SHA256_PATTERN = r"\b[a-fA-F0-9]{64}\b"
