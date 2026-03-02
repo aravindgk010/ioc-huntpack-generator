@@ -29,7 +29,7 @@ Security analysts often receive noisy alert text, copied notes, or unstructured 
 This project automates the first pass of IOC extraction and turns the output into actionable hunting artifacts.
 
 ## Project Structure
-
+```text
 ioc-huntpack-generator/
 ├── .gitignore
 ├── README.md
