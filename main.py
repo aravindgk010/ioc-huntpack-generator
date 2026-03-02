@@ -8,6 +8,7 @@ from ioc_extractor.reporter import (
     build_markdown_report,
     write_markdown_report,
 )
+from ioc_extractor.huntpack import build_hunt_pack
 
 
 def read_input_file(file_path: Path) -> str:
@@ -23,7 +24,7 @@ def ensure_output_dir(output_dir: Path) -> None:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Extract IOCs from a text file and prepare them for reporting."
+        description="Extract IOCs from a text file and prepare reports and hunt queries."
     )
     parser.add_argument(
         "--input",
@@ -48,11 +49,15 @@ def main():
 
     json_output_path = output_dir / "ioc_report.json"
     markdown_output_path = output_dir / "ioc_report.md"
+    huntpack_output_path = output_dir / "hunt_pack.md"
 
     write_json_report(normalized_iocs, json_output_path)
 
     markdown_report = build_markdown_report(normalized_iocs, input_path.name)
     write_markdown_report(markdown_report, markdown_output_path)
+
+    hunt_pack = build_hunt_pack(normalized_iocs, input_path.name)
+    write_markdown_report(hunt_pack, huntpack_output_path)
 
     print("\n[+] Extracted IOCs:\n")
     for ioc_type, values in normalized_iocs.items():
@@ -67,6 +72,7 @@ def main():
     print("[+] Reports generated successfully:")
     print(f"  - JSON: {json_output_path}")
     print(f"  - Markdown: {markdown_output_path}")
+    print(f"  - Hunt Pack: {huntpack_output_path}")
 
 
 if __name__ == "__main__":
